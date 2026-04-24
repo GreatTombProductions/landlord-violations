@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philadelphia Landlord Violations — Search by Owner</title>
+    <meta name="description" content="Search Philadelphia housing code violations by landlord or LLC name. See every property and violation across an owner's entire portfolio. 1.45 million violations, 154,000+ owners.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Philadelphia Landlord Violations</h1>
+        <p class="subtitle">Search housing code violations by owner name</p>
+    </header>
+
+    <main>
+        <!-- Search -->
+        <div class="search-container">
+            <input
+                type="text"
+                id="search-input"
+                placeholder="Search landlord name or LLC..."
+                autocomplete="off"
+                autofocus
+            >
+            <div id="search-status" class="search-status"></div>
+        </div>
+
+        <!-- Search Results (owner-level matches) -->
+        <div id="results" class="results"></div>
+
+        <!-- Owner Profile (shown when an owner is selected) -->
+        <div id="owner-detail" class="owner-detail hidden">
+            <button id="back-btn" class="back-btn">&larr; Back to results</button>
+            <div id="owner-header" class="owner-header"></div>
+            <div id="property-list" class="property-list"></div>
+        </div>
+
+        <!-- Stats (shown on initial page) -->
+        <div id="stats-panel" class="stats-panel">
+            <div class="stats-grid" id="stats-grid"></div>
+            <div id="top-violators" class="top-violators"></div>
+            <div id="violation-types" class="violation-types"></div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p class="data-source">
+            Data: <a href="https://www.opendataphilly.org/datasets/violations/" target="_blank" rel="noopener">City of Philadelphia, Licenses & Inspections</a>
+            + <a href="https://www.opendataphilly.org/datasets/opa-property-assessments/" target="_blank" rel="noopener">OPA Property Assessments</a>.
+            Covers 2007 through early 2020.
+        </p>
+        <p class="disclaimer">
+            Publicly available city code enforcement data presented in a more accessible format.
+            Not legal advice. Absence of a record does not mean no violations exist.
+        </p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

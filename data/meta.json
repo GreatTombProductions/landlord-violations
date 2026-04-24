@@ -1,0 +1,12 @@
+{
+  "source": "City of Philadelphia, Licenses & Inspections",
+  "source_url": "https://www.opendataphilly.org/datasets/violations/",
+  "description": "Housing code violations with owner names, cross-referenced with OPA property records",
+  "date_range": {
+    "start": "2007-01-01",
+    "end": "2020-03-12"
+  },
+  "record_count": 1447919,
+  "update_note": "Data sourced from phl.carto.com. Dataset covers 2007 through early 2020.",
+  "disclaimer": "This tool presents publicly available Philadelphia code enforcement data in a more accessible format. It does not include state-level enforcement or conditions not reported to L&I. Absence of a record does not mean no violations exist. Not legal advice."
+}
